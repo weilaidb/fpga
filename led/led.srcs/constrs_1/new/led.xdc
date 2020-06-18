@@ -10,3 +10,5 @@ set_property IOSTANDARD LVCMOS33 [get_ports {led[0]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {led[1]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {led[2]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {led[3]}]
+
+##create_clock -period 20.000 -name sys_clk -waveform {0.000 10.000} [get ports sys_clk]
